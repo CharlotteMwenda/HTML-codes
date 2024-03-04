@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark text color */
+            margin: 0;
+            padding: 0;
+
+        }
+        header {
+            background-color: #3498db; /* Blue header background */
+            color: #1d0b0b; /* White text color */
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px; /* Increased gap for better separation */
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Rounded corners for images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            transition: transform 0.3s ease-in-out;
+            align-items: center;
+
+        }
+        .gallery img:hover {
+            transform: scale(1.1); /* Zoom in a bit on hover */
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #3498db; /* Blue underline for section headings */
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type:none;
+            padding: 5px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            color:rgb(0, 81, 255); 
+            text-decoration: navajowhite;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font: size 115px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .menu {
+            align-self: center;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HOME.</h1>
+        <p>Welcome to Image Links.Explore more about technology,Nature and Food.</p>
+        <img src="images/technology.webp" alt="Technology" width="200" height="150">
+    </header>
+    <main class="container">
+        <section>
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <a href="https://images.pexels.com/photos/589802/pexels-photo-589802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank">
+                    <img src="images/Nature1.webp" alt="Nature 1">
+                </a>
+        
+                <a href="https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank">
+                    <img src="images/Nature2.webp" alt="Nature 2">
+                </a>
+                <a href="https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                    <img src="images/Nature3.webp" alt="Nature 3">
+                </a>
+            
+            </div>
+        </section>
+        <section>
+            <h2>Menu</h2>
+            <div class="menu">
+            <ul>
+            <li>
+                    <a href="https://img.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg?w=740&t=st=1709538474~exp=1709539074~hmac=27f0291eb9b2ea755607e024995b1b06522b5e3bbc3f18168b5c090c64e30546" target="_blank">
+                        <img src="images/pizza.webp" alt="Food Item 1" width="300" height="250">
+                        <br>PIZZA <br>
+                    </a></li>
+        
+                 <li>   <a href="https://media.istockphoto.com/id/1416930516/photo/green-lettuce-salad.jpg?s=612x612&w=0&k=20&c=QlhcJKQ3kXYJMAp68ILD1Ccj-KsNee6ZQ8z57FHyk1A=" target="_blank">
+                        <img src="images/salad.webp" alt="Food Item 2" width="300" height="250">
+                       <br> SALAD<br>
+                    </a></li>
+                
+                
+                    <li><a href="https://www.freepik.com/free-photo/close-up-plate-with-sushi_9489860.htm#query=sushi&position=7&from_view=keyword&track=sph&uuid=4b2780e6-dcdf-4d03-8d60-6655b9928198" target="_blank">
+                        <img src="images/Sushi.webp" alt="Food Item 3" width="300" height="250">
+                       <br> SUSHI<br>
+                    </a>
+                </li>
+            </ul>
+            </div>
+    
+        </section>
+    </main>
+</body>
+</html>
