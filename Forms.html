@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #834268;
+      background-image:none
+    }
+    h1 {
+      text-align: center;
+      background-color:aqua;
+      padding: 10px;
+    }
+    
+    form {
+      max-width: 400px;
+      margin: auto;
+      background-color: lightblue;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;}
+
+      .Gender-group {
+        display:flex;
+        gap: 250px;}
+       
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button.cancel {
+      background-color: #f44336;
+    }
+  </style>
+</head>
+<body>
+  <h1><i>STUDENT'S REGISTRATION FORM.</i></h1>
+
+  <form>
+    <label for="fullname">FullName</label>
+    <label for="surname">SurName:</label> 
+    <input type="text" id="surname" name="surname" placeholder="Type your name here" required>
+
+    <label for="firstname">FirstName:</label> 
+    <input type="text" id="firstname" name="firstname"placeholder="Type your name here" required>
+  
+    <label for="middlename">MiddleName:</label>
+    <input type="text" id="middlename" name="middlename" placeholder="Type your name here"required>
+  
+        <div id="name">
+      <p><i>Please register your legal name as it appears on your other official documents.</i></p>
+
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label>Gender</label>
+    </div class="Gender-group">
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    </div>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" required></textarea>
+
+    <label for="telephone">Telephone:</label>
+    <input type="tel" id="telephone" name="telephone" placeholder="+254"required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="cm@gmail.com" required>
+
+    <label for="course">Course:</label>
+    <select id="course" name="course" required>
+      <option value="marketing">Marketing</option>
+      <option value="mathematics and computer science">Mathematics and computer science</option>
+      <option value="statistics">Statistics</option>
+      <option value="actuarial science">Actuarial Science</option>
+      <option value="applied statistics">Applied Statistics</option>
+      <option value="analytical chemistry">Analytical Chemistry</option>
+      <option value="economics">Economics</option>
+      <option value="computer science">Computer Science</option>
+      <option value="information technology">Information Technology</option>
+      <option value="accounting">Accounting</option>
+      <option value="finance">Finance</option>
+    </select>
+
+    <button type="submit">Register</button>
+    <button type="button" class="cancel" onclick="window.location.href='cancel.html'">Cancel</button>
+  </form>
+
+</body>
+</html>
